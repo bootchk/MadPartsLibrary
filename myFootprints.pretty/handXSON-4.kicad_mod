@@ -1,0 +1,15 @@
+(module
+handXSON-4
+(layer F.Cu)
+(descr "hand solderable XSON-4 footprint\nbased on Texas Instruments DQN")
+(fp_text reference "REF**" (at 0.0 -1.2) (layer F.SilkS) (effects (font (size 0.625 0.625) (thickness 0.1))))
+(fp_text value "VAL**" (at 0.0 1.2) (layer F.SilkS) hide (effects (font (size 0.625 0.625) (thickness 0.1))))
+(pad 1 smd oval (size 0.65 0.3) (at -0.6 -0.325 180) (layers F.Cu F.Paste F.Mask))
+(pad 2 smd oval (size 0.65 0.3) (at -0.6 0.325 180) (layers F.Cu F.Paste F.Mask))
+(pad 3 smd oval (size 0.65 0.3) (at 0.6 0.325 0) (layers F.Cu F.Paste F.Mask))
+(pad 4 smd oval (size 0.65 0.3) (at 0.6 -0.325 0) (layers F.Cu F.Paste F.Mask))
+(fp_line (start -0.5 0.5) (end 0.5 0.5) (layer F.SilkS) (width 0.1))
+(fp_line (start 0.5 0.5) (end 0.5 -0.5) (layer F.SilkS) (width 0.1))
+(fp_line (start 0.5 -0.5) (end -0.5 -0.5) (layer F.SilkS) (width 0.1))
+(fp_line (start -0.5 -0.5) (end -0.5 0.5) (layer F.SilkS) (width 0.1))
+(fp_circle (center -1.2 -0.4) (end -1.05857864376 -0.258578643763) (layer F.SilkS) (width 0.1) (layer F.SilkS) (width 0.1)))

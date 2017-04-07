@@ -1,0 +1,13 @@
+(module
+SC-75
+(layer F.Cu)
+(descr "also known as SOT-416\nbased on On Semi ")
+(fp_text reference "REF**" (at 0.0 -1.2) (layer F.SilkS) (effects (font (size 0.625 0.625) (thickness 0.1))))
+(fp_text value "VAL**" (at 0.0 1.2) (layer F.SilkS) hide (effects (font (size 0.625 0.625) (thickness 0.1))))
+(pad 1 smd rect (size 0.5 0.36) (at -0.7 -0.5 180) (layers F.Cu F.Paste F.Mask))
+(pad 2 smd rect (size 0.5 0.36) (at -0.7 0.5 180) (layers F.Cu F.Paste F.Mask))
+(pad 3 smd rect (size 0.5 0.36) (at 0.7 -0.0 0) (layers F.Cu F.Paste F.Mask))
+(fp_line (start -0.4 0.8) (end 0.4 0.8) (layer F.SilkS) (width 0.1))
+(fp_line (start 0.4 0.8) (end 0.4 -0.8) (layer F.SilkS) (width 0.1))
+(fp_line (start 0.4 -0.8) (end -0.4 -0.8) (layer F.SilkS) (width 0.1))
+(fp_line (start -0.4 -0.8) (end -0.4 0.8) (layer F.SilkS) (width 0.1)))
