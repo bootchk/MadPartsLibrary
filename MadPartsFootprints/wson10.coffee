@@ -15,10 +15,14 @@ footprint = () ->
   thermalPadName = pinCount + 1
 
   # hand solderable
-  # pin is 0.5 length from package edged, so dx is 1
+  # TI says each pin is 0.3-0.5 so use 0.4
+  # pin is 0.4 length from package edged, so dx is 0.8
+  #
+  # Note that 0.5 leaves not enough clearance to thermal pad.
+  # 0.4 leaves 
   # This will get paste and wick up packages orthogonal metal
   # but might wick under chip and lift it?
-  dx = 1
+  dx = 0.8
   betweenPinCenters = 3
 
   # reflow
@@ -27,6 +31,8 @@ footprint = () ->
 
   # TI says 0.3-0.18
   dy = 0.28
+
+  # no tolerance for pitch, else it accumulates
   pitch = 0.5
 
   # define copper pads for pins
@@ -47,7 +53,7 @@ footprint = () ->
 
    # Thermal pad: square through hole pad  w/ drill
   thermalPad = new SquarePad 2, drill
-  thermalPad.dx = 1.65
+  thermalPad.dx = 1.55
   thermalPad.dy = 1
   thermalPad.name = thermalPadName
   thermalPad.paste = true
