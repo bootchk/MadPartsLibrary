@@ -1,8 +1,8 @@
 #format 1.2
-#name SC-75
-#id SC-75
-#desc also known as SOT-416
-#desc based on On Semi 
+#name FFC-4-TH
+#id FFC-4-TH
+#desc Flat Flexible Cable 4 pins, through hole
+#desc e.g. Amphenol 58JF
 
 # See dual.
 # Two columns of 'unit' elements,  'distance' apart vertically

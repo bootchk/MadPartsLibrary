@@ -37,8 +37,17 @@ footprint = () ->
   packageHeight = 20
 
   silk = make_rect packageWidth, packageHeight, lineWidth, 'silk'
+ 
 
   nameValueOffset = 3
   name = new Name nameValueOffset + 0.2
   value = new Value -nameValueOffset
-  combine [name, value, pads, silk]
+
+# Pin 1 designator
+  # Positive +
+  c = new Circle 0.1
+  c.r = 0.2
+  c.x = 0
+  c.y = 11
+
+  combine [name, value, pads, c, silk]
